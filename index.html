@@ -194,7 +194,8 @@
                         yearsDifference = Math.abs(yearsDifference + 1);
                         monthsDifference = Math.abs(monthsDifference) - 12;
                     }
-                    document.getElementById("totalYears").innerText = Math.abs(yearsDifference - 1) + "." + Math.abs(monthsDifference) + " yers";
+                    monthsDifference = Math.abs(monthsDifference) / 12;
+                    document.getElementById("totalYears").innerText = Math.abs(yearsDifference - 1) + Math.abs(monthsDifference) + " years";
 
                     // C# experience
                     const targetDate2 = new Date("2023-07-01");
@@ -207,7 +208,8 @@
                         yearsDifference2 = Math.abs(yearsDifference2 + 1);
                         monthsDifference2 = Math.abs(monthsDifference2) - 12;
                     }
-                    document.getElementById("cSharpTime").innerText = Math.abs(yearsDifference2 - 1) + "." + Math.abs(monthsDifference2) + " yers";
+                    monthsDifference2 = Math.abs(monthsDifference2) / 12;
+                    document.getElementById("cSharpTime").innerText = Math.abs(yearsDifference2 - 1) + Math.abs(monthsDifference2) + " years";
                 </script>
 
                 <div>

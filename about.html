@@ -255,7 +255,9 @@
                                 yearsDifference = Math.abs(yearsDifference + 1);
                                 monthsDifference = Math.abs(monthsDifference) - 12;
                             }
-                            document.getElementById("totalYears").innerText = Math.abs(yearsDifference - 1) + "." + Math.abs(monthsDifference)
+
+                            monthsDifference = Math.abs(monthsDifference) / 12;
+                            document.getElementById("totalYears").innerText = Math.abs(yearsDifference - 1) + Math.abs(monthsDifference)
 
                         </script>
 
