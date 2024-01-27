@@ -1,11 +1,11 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
 
-<!-- Mirrored from slimhamdi.net/tunis/dark/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 26 Jan 2024 10:42:43 GMT -->
+<!-- Mirrored from slimhamdi.net/tunis/dark/about.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 26 Jan 2024 10:43:06 GMT -->
 <head>
     <meta charset="utf-8">
-    <title>Fahim - Personal Portfolio</title>
+    <title>About - Fahim's Personal Portfolio</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Template Google Fonts -->
@@ -40,7 +40,7 @@
     <script src="js/modernizr.custom.js"></script>
 </head>
 
-<body class="home">
+<body class="about">
 <!-- Live Style Switcher Starts - demo only -->
 <!-- <div id="switcher" class="">
     <div class="content-switcher">
@@ -77,19 +77,18 @@
                 <a href="#" onclick="setActiveStyleSheet('yellow');" title="yellow" class="color"><img src="img/styleswitcher/yellow.png" alt="yellow"/></a>
             </li>
         </ul>
+
         <a href="https://themeforest.net/item/tunis-personal-portfolio/26761598?irgwc=1&amp;clickid=UBs0rDX6YxyJWfewUx0Mo3E1UkiwozXD10XATw0&amp;iradid=275988&amp;irpid=1327395&amp;iradtype=ONLINE_TRACKING_LINK&amp;irmptype=mediapartner&amp;mp_value1=&amp;utm_campaign=af_impact_radius_1327395&amp;utm_medium=affiliate&amp;utm_source=impact_radius" class="waves-effect waves-light font-weight-700 purchase"><i class="fa fa-shopping-cart"></i> Purchase</a>
         <div id="hideSwitcher">&times;</div>
     </div>
-</div> 
-
-<div id="showSwitcher" class="styleSecondColor"><i class="fa fa-cog fa-spin"></i></div>-->
-
+</div>
+<div id="showSwitcher" class="styleSecondColor"><i class="fa fa-cog fa-spin"></i></div> -->
 <!-- Live Style Switcher Ends - demo only -->
 <!-- Header Starts -->
 <header class="header" id="navbar-collapse-toggle">
     <!-- Fixed Navigation Starts -->
     <ul class="icon-menu d-none d-lg-block revealator-slideup revealator-once revealator-delay1">
-        <li class="icon-box active">
+        <li class="icon-box">
             <i class="fa fa-home"></i>
             <a href="index.html">
                 <h2>Home</h2>
@@ -101,17 +100,17 @@
                 <h2>About</h2>
             </a>
         </li>
-        <li class="icon-box ">
+        <li class="icon-box">
             <!-- <i class="fa fa-user"></i> -->
             <i class="fa fa-graduation-cap"></i>
             <a href="education.html">
                 <h2 style="width: 205px;">Education & Skills</h2>
             </a>
         </li>
-        <li class="icon-box">
+        <li class="icon-box active">
             <i class="fa fa-briefcase"></i>
             <a href="experience.html">
-                <h2 style="width: 205px;">EXPERIENCE</h2>
+                <h2>Experience</h2>
             </a>
         </li>
         <li class="icon-box">
@@ -143,14 +142,14 @@
             <span></span>
             <ul class="list-unstyled" id="menu">
                 <li><a href="index.html"><i class="fa fa-home"></i><span>Home</span></a></li>
-                <li class="active"><a href="about.html"><i class="fa fa-user"></i><span>About</span></a></li>
+                <li class=""><a href="about.html"><i class="fa fa-user"></i><span>About</span></a></li>
                 <li class="icon-box ">
                     <a href="education.html">
                         <i class="fa fa-graduation-cap"></i>
                         <span>Education & Skills</span>
                     </a>
                 </li>
-                <li class="icon-box">
+                <li class="icon-box active">
                     <a href="experience.html">
                         <i class="fa fa-briefcase"></i>
                         <span>Experience</span>
@@ -165,103 +164,85 @@
     <!-- Mobile Menu Ends -->
 </header>
 <!-- Header Ends -->
+<!-- Page Title Starts -->
+<section class="title-section text-left text-sm-center revealator-slideup revealator-once revealator-delay1">
+    <h1>My <span>EXPERIENCE </span></h1>
+    <span class="title-bg">Resume</span>
+</section>
+<!-- Page Title Ends -->
 <!-- Main Content Starts -->
-<section class="container-fluid main-container container-home p-0 revealator-slideup revealator-once revealator-delay1">
-    <div class="color-block d-none d-lg-block"></div>
-    <div class="row home-details-container align-items-center">
-        <div class="col-lg-4 bg position-fixed d-none d-lg-block"></div>
-        <div class="col-12 col-lg-8 offset-lg-4 home-details text-left text-sm-center text-lg-left">
-            <div>
-                <img src="img/img-mobile.png" class="img-fluid main-img-mobile d-sm-block d-lg-none" alt="my picture" />
-                <h1 class="text-uppercase poppins-font">I'm Fahim Patowry.<span>web developer</span></h1>
-                <p class="open-sans-font">
-                    Dynamic and motivated, I bring over
-                    <span id="totalYears"></span>
-                    of solid industry experience. My journey began in Front-End development. Over the past 
-                    <span id="cSharpTime"></span>
-                    , I've immersed myself in Back-End using .Net, significantly enhancing my expertise.  I have a strong background in Front-End development, Back-End(.Net), object- oriented programming and UI/UX design. My greatest strengths lie in my ability to solve complex problems quickly and effectively.
-                </p>
-
-                <script>
-                    // total experience
-                    const targetDate = new Date("2021-07-01");
-                    const currentDate = new Date();
-
-                    var yearsDifference = currentDate.getFullYear() - targetDate.getFullYear();
-                    var monthsDifference = (currentDate.getMonth() -12) + targetDate.getMonth();
-
-                    if (Math.abs(monthsDifference) >= 12) {
-                        yearsDifference = Math.abs(yearsDifference + 1);
-                        monthsDifference = Math.abs(monthsDifference) - 12;
-                    }
-                    document.getElementById("totalYears").innerText = Math.abs(yearsDifference - 1) + "." + Math.abs(monthsDifference) + " yers";
-
-                    // C# experience
-                    const targetDate2 = new Date("2023-07-01");
-                    const currentDate2 = new Date();
-
-                    var yearsDifference2 = currentDate2.getFullYear() - targetDate2.getFullYear();
-                    var monthsDifference2 = (currentDate2.getMonth() - 12) + targetDate2.getMonth();
-
-                    if (Math.abs(monthsDifference2) >= 12) {
-                        yearsDifference2 = Math.abs(yearsDifference2 + 1);
-                        monthsDifference2 = Math.abs(monthsDifference2) - 12;
-                    }
-                    document.getElementById("cSharpTime").innerText = Math.abs(yearsDifference2 - 1) + "." + Math.abs(monthsDifference2) + " yers";
-                </script>
-
-                <div>
-                    <a class="button" target="_blank" href="tel:01828093765" 
-                        style="margin-right: 5px; margin-bottom: 30px; padding: 12px 16px; border-radius: 50%;">
-                        <span class="button-text fa fa-phone"></span>
-                        <span class="button-icon" style="width: 0;"></span>
-                    </a>
-                    <a class="button" target="_blank" href="mailto: patowaryfahim3@gmail.com" 
-                        style="margin-right: 5px; margin-bottom: 30px; padding: 12px 16px; border-radius: 50%;">
-                        <span class="button-text fa fa-envelope"></span>
-                        <span class="button-icon" style="width: 0;"></span>
-                    </a>
-                    <a class="button" target="_blank" href="whatsapp://send?abid=01828093765&text=Hello%2C%20World!"
-                        style="margin-right: 5px; margin-bottom: 30px; padding: 12px 16px; border-radius: 50%;">
-                        <span class="button-text fa fa-whatsapp"></span>
-                        <span class="button-icon" style="width: 0;"></span>
-                    </a>
-                    <a class="button" target="_blank" href="https://github.com/fahimpatowary" 
-                        style="margin-right: 5px; margin-bottom: 30px; padding: 10px 16px; border-radius: 50%;">
-                        <span class="button-text fa fa-github"></span>
-                        <span class="button-icon" style="width: 0;"></span>
-                    </a>
-                    <a class="button" target="_blank" href="https://www.linkedin.com/in/md-fahim-patowry-b814b2202/" 
-                        style="margin-right: 5px; margin-bottom: 30px; padding: 10px 14px; border-radius: 50%;">
-                        <span class="button-text fa fa-linkedin"></span>
-                        <span class="button-icon" style="width: 0;"></span>
-                    </a>
-                    <a class="button" target="_blank" href="https://www.facebook.com/fahim.patowry/" 
-                        style="margin-right: 5px; margin-bottom: 30px; padding: 10px 16px; border-radius: 50%;">
-                        <span class="button-text fa fa-facebook-f"></span>
-                        <span class="button-icon" style="width: 0;"></span>
-                    </a>
-                    <a class="button" target="_blank" href="https://www.instagram.com/fahimjoy768/" 
-                        style="margin-right: 5px; margin-bottom: 30px; padding: 10px 16px; border-radius: 50%;">
-                        <span class="button-text fa fa-instagram"></span> 
-                        <span class="button-icon" style="width: 0;"></span>
-                    </a>
-                    <!-- <a class="button" href="https://www.youtube.com/channel/UCqRdFfXYGyHHv_RkCt8a1_w" 
-                        style="margin-right: 5px; margin-bottom: 30px; padding: 10px 16px; border-radius: 50%;">
-                        <span class="button-text fa fa-youtube"></span>
-                        <span class="button-icon" style="width: 0;"></span>
-                    </a> -->
+<section class="main-content revealator-slideup revealator-once revealator-delay1">
+    <div class="container">
+        <hr class="separator mt-0">
+        <!-- Skills Starts -->
+        <div class="row" >
+            <!-- <div class="col-12">
+                <h3 class="text-uppercase pb-5 mb-0 text-left text-sm-center custom-title ft-wt-600">Experience <span>&</span> Education</h3>
+            </div> -->
+            <div class="col-lg-6 m-15px-tb">
+                <div class="resume-box">
+                    <ul>
+                        <li>
+                            <div class="icon">
+                                <i class="fa fa-briefcase"></i>
+                            </div>
+                            <span class="time open-sans-font text-uppercase">2018 - Present</span>
+                            <h5 class="poppins-font text-uppercase">Web Developer <span class="place open-sans-font">Envato</span></h5>
+                            <p class="open-sans-font">Lorem ipsum dolor sit amet, consectetur tempor incididunt ut labore adipisicing elit, </p>
+                        </li>
+                        <li>
+                            <div class="icon">
+                                <i class="fa fa-briefcase"></i>
+                            </div>
+                            <span class="time open-sans-font text-uppercase">2013 - 2018</span>
+                            <h5 class="poppins-font text-uppercase">UI/UX Designer <span class="place open-sans-font">Themeforest</span></h5>
+                            <p class="open-sans-font">Lorem incididunt dolor sit amet, consectetur eiusmod dunt doldunt dol elit, tempor incididunt</p>
+                        </li>
+                        <li>
+                            <div class="icon">
+                                <i class="fa fa-briefcase"></i>
+                            </div>
+                            <span class="time open-sans-font text-uppercase">2005 - 2013</span>
+                            <h5 class="poppins-font text-uppercase">Consultant <span class="place open-sans-font">Videohive</span></h5>
+                            <p class="open-sans-font">Lorem ipsum dolor sit amet, tempor incididunt ut laboreconsectetur elit, sed do eiusmod tempor duntt</p>
+                        </li>
+                    </ul>
                 </div>
-                <a class="button" href="about.html" style="margin-right: 0px; margin-bottom: 30px;">
-                    <span class="button-text">more about me</span>
-                    <span class="button-icon fa fa-arrow-right"></span>
-                </a>
-                <!-- <a class="button" href="#" style="margin-right: 0px; margin-bottom: 30px;">
-                    <span class="button-text">Download CV</span>
-                    <span class="button-icon fa fa-download"></span>
-                </a> -->
+            </div>
+            <div class="col-lg-6 m-15px-tb">
+                <div class="resume-box">
+                    <ul>
+                        <li>
+                            <div class="icon">
+                                <i class="fa fa-graduation-cap"></i>
+                            </div>
+                            <span class="time open-sans-font text-uppercase">2015</span>
+                            <h5 class="poppins-font text-uppercase">Engineering Degree <span class="place open-sans-font">Oxford University</span></h5>
+                            <p class="open-sans-font">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do tempor incididunt ut labore</p>
+                        </li>
+                        <li>
+                            <div class="icon">
+                                <i class="fa fa-graduation-cap"></i>
+                            </div>
+                            <span class="time open-sans-font text-uppercase">2012</span>
+                            <h5 class="poppins-font text-uppercase">Master Degree <span class="place open-sans-font">Kiev University</span></h5>
+                            <p class="open-sans-font">Lorem ipsum dolor sit amet, consectetur elit, sed do eiusmod tempor incididunt ut adipisicing</p>
+                        </li>
+                        <li>
+                            <div class="icon">
+                                <i class="fa fa-graduation-cap"></i>
+                            </div>
+                            <span class="time open-sans-font text-uppercase">2009</span>
+                            <h5 class="poppins-font text-uppercase">Bachelor Degree <span class="place open-sans-font">Tunis High School</span></h5>
+                            <p class="open-sans-font">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor ut labore</p>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
+        <!-- Skills Ends -->
+        <hr class="separator mt-1">
+        
     </div>
 </section>
 <!-- Main Content Ends -->
@@ -283,5 +264,5 @@
 </body>
 
 
-<!-- Mirrored from slimhamdi.net/tunis/dark/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 26 Jan 2024 10:42:58 GMT -->
+<!-- Mirrored from slimhamdi.net/tunis/dark/about.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 26 Jan 2024 10:43:06 GMT -->
 </html>
